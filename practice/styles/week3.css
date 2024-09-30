@@ -1,0 +1,17 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.pink-backround{
+    background-color: hotpink;
+}
+
+p{
+    background-color: green;
+}
+#my-name{
+    color: white;
+    background-color: plum;
+    padding: 10px;
+}
