@@ -16,10 +16,10 @@ Fonts are separated by a & */
   --paragraph-font: Zilla, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: black;  /* headlines on a white background */ 
-  --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
-  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+  --headline-color-on-white: #2e294e;  /* headlines on a white background */ 
+  --headline-color-on-color: #78C0E0; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #2e294e; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #449DD1; /* paragraph text on a colored background */ 
   --paragraph-background-color: #000000  ;
   --nav-link-color: #396E94;
   --nav-background-color: #D4AC0D;
