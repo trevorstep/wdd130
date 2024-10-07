@@ -1,0 +1,36 @@
+
+main{
+    background-color: lightblue;
+    width: 80vw;
+    margin:0 auto;
+    text-align: center;
+}
+
+img{
+
+    height: 600px;
+}
+
+body{
+    font-size: 1.5em;
+}
+
+#green{
+    background-color: lightgreen;
+}
+
+p{
+    color: hotpink;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer p{
+    color: black;
+}
+
+a:hover{
+    background-color: chartreuse;
+    color: lavender;
+}
