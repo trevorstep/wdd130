@@ -1,4 +1,8 @@
 
+nav{
+    background-color: cadetblue;
+    text-align: center;
+}
 main{
     background-color: lightblue;
     width: 80vw;
@@ -31,6 +35,6 @@ footer p{
 }
 
 a:hover{
-    background-color: chartreuse;
-    color: lavender;
+    background-color: rgb(0, 26, 255);
+    color: goldenrod;
 }
