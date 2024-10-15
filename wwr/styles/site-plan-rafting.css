@@ -30,6 +30,15 @@ Fonts are separated by a & */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+div{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+main{
+  text-align: center;
+}
+
 body {
   max-width: 960px;
   margin: 0 auto;
@@ -112,6 +121,7 @@ nav a {
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
+  text-align: center;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
