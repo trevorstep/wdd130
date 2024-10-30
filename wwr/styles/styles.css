@@ -9,10 +9,14 @@ body {
 }
 header {
     background-color:#2e294e;
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 nav a:hover {
-    background-color: #2e294e;
+    background-color: #bf5767;
     color:#78C0E0;
+    display: flex;
+    justify-content: space-around;
 }
 #hero-img{
     text-align: center;
@@ -119,6 +123,8 @@ main section{
 
 #logo_link{
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .msg h2{
