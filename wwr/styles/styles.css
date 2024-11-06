@@ -12,6 +12,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
+
 nav a:hover {
     background-color: #bf5767;
     color:#78C0E0;
@@ -39,9 +40,8 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color:#78C0E0;
-    text-decoration: underline;
-
+    color:#2e294e;
+    background-color: #78C0E0;
 }
 
 footer .social img{
@@ -59,8 +59,9 @@ footer .social img{
 
 }
 .book:hover{
-    background-color: #2e294e;
-    color:#78C0E0;
+    color: #2e294e;
+    background-color: #BF5767;
+    
 } 
 
 .book{
@@ -69,6 +70,7 @@ footer .social img{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    color:#BF5767;
 }
 
 .join{
@@ -77,11 +79,13 @@ footer .social img{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    color:#BF5767;
 }
 
 .join:hover{
     background-color: #2e294e;
-    color:#78C0E0;
+    color: #2e294e;
+    background-color: #BF5767;
 }
 
 
@@ -102,7 +106,6 @@ h4{
     text-align: center;
     background-color: #2e294e;
     color:#78C0E0;
-
 
 }
 
