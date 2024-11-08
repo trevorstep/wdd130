@@ -19,6 +19,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
 }
+
 #hero-img{
     text-align: center;
     width: 100%;
@@ -123,12 +124,22 @@ main section{
     font-size: 2em;
     margin-top: 10px;
 }
-
-#logo_link{
+logo{
+width: 100%;
+}
+#logo_link img{
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+    width: 80px;  
+    height: 80px;
 }
+
+#logo_link img {
+    width: 80px;
+    height: 80px;
+}
+
 
 .msg h2{
     color:#78C0E0;
@@ -169,6 +180,7 @@ main section{
 .card-img {
     border: 10px solid #BF5767;
 }
+
 main section img {
     box-sizing: border-box;
 }
