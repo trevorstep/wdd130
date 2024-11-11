@@ -144,12 +144,19 @@ main section{
     text-align: center;
 }
 
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+
+}
 .home-title{
     color:#78C0E0;
     font-family: 'Lato', 'Helvetica', sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
+
 logo{
 width: 100%;
 }
@@ -193,9 +200,6 @@ width: 100%;
     padding-top: 10px;
 }
 
-.rivers-card{
-    margin: 200px 0;
-} 
 
 .camping-card{
     margin: 200px 0;
@@ -229,6 +233,7 @@ main section img {
 }
 
 .rivers-card{
+    margin: 200px 0;
     grid-column: 2/4;
     grid-row: 2/3;
 }
