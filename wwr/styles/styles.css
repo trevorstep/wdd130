@@ -16,9 +16,11 @@ header {
 nav a:hover {
     background-color: #bf5767;
     color:#78C0E0;
+}
+
+nav{
     display: flex;
     justify-content: space-around;
-    display: inline-block;
 }
 
 #hero{
@@ -124,9 +126,6 @@ text-align: center;
 color:#78C0E0;
 text-decoration: none;
 padding: 35px;
-display: flex;
-justify-content: space-around;
-display: inline-block;
 }
 
 h1{
@@ -187,7 +186,7 @@ width: 100%;
 
 .msg p{
     color:#78C0E0;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 15px;
 }
 
