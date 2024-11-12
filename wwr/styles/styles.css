@@ -78,10 +78,16 @@ footer .social img{
 }
 
 #background{
-    height:725px;
     background-color: #2e294e;
 
 }
+
+#background{
+    background-color: #78C0E0;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
 .book:hover{
     color: #2e294e;
     background-color: #BF5767;
@@ -126,14 +132,12 @@ display: inline-block;
 h1{
     text-align: center;
     background-color: #2e294e;
-
 }
 
 h4{
     text-align: center;
     background-color: #2e294e;
     color:#78C0E0;
-
 }
 
 .button-box{
@@ -147,8 +151,6 @@ main section{
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-
 }
 .home-title{
     color:#78C0E0;
@@ -211,6 +213,7 @@ width: 100%;
 
 
 .card-img {
+    width: 100%;
     border: 10px solid #BF5767;
     border: 10px solid #78C0E0;
     transition: transform .5s;
@@ -223,6 +226,7 @@ width: 100%;
 }
 
  .mountains {
+    width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #BF5767;
@@ -248,10 +252,6 @@ main section img {
     grid-row: 2/3;
 }
 
-#backround{
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
 
 .mountains{
     grid-column: 2/7;
