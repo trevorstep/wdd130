@@ -1,36 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-    background-color: #2e294e; 
-    font-family: 'Zilla','Helvetica', sans-serif;;
+    background-color: #2e294e;
+    font-family: 'Zilla', 'Helvetica', sans-serif;
+    ;
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
+
 header {
-    background-color:#2e294e;
+    background-color: #2e294e;
     display: grid;
     grid-template-columns: 150px auto;
 }
 
 nav a:hover {
     background-color: #bf5767;
-    color:#78C0E0;
+    color: #78C0E0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
 }
 
-#hero{
+#hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px; 
+    margin-top: -100px;
 }
 
 
-#hero-img{
+#hero-img {
     text-align: center;
     width: 100%;
 }
@@ -49,9 +51,9 @@ nav{
 
 footer {
     background-color: #2e294e;
-    color:#78C0E0;
+    color: #78C0E0;
     padding: 25px 50px;
-    margin-top: 200px; 
+    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,97 +61,108 @@ footer {
 
 footer p {
     font-size: 1.2em;
-}   
+}
 
-footer a{
-    color:#78C0E0;
+footer a {
+    color: #78C0E0;
     text-decoration: none;
 }
-footer a:hover{
-    color:#2e294e;
+
+footer a:hover {
+    color: #2e294e;
     background-color: #78C0E0;
 }
 
-footer .social img{
+footer .social img {
     padding-top: 15px;
 }
 
-#content{
+#content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-#background{
+#background {
     background-color: #2e294e;
 
 }
 
-#background{
+#background {
     background-color: #78C0E0;
     grid-column: 1/11;
     grid-row: 4/9;
 }
 
-.book:hover{
+.book:hover {
     color: #2e294e;
     background-color: #BF5767;
-    
-} 
 
-.book{
+}
+
+.book {
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    color:#BF5767;
+    color: #BF5767;
 }
 
-.join{
+.join {
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    color:#BF5767;
+    color: #BF5767;
 }
 
-.join:hover{
+.join:hover {
     background-color: #2e294e;
     color: #2e294e;
     background-color: #BF5767;
 }
 
 
-nav a{
-text-align: center;
-color:#78C0E0;
-text-decoration: none;
-padding: 35px;
+nav a {
+    text-align: center;
+    color: #78C0E0;
+    text-decoration: none;
+    padding: 35px;
 }
 
-h1{
+h1 {
     text-align: center;
     background-color: #2e294e;
 }
 
-h2{
+h2 {
     text-align: center;
-    color: #2e294e;
+    color: #78C0E0;
+    background-color: #2e294e;
+    padding: 15px;
 
 }
 
-h4{
+h3 {
+    text-align: center;
+    color: #78C0E0;
+    background-color: #2e294e;
+    padding: 10px;
+    font-size: medium;
+}
+
+h4 {
     text-align: center;
     background-color: #2e294e;
-    color:#78C0E0;
+    color: #78C0E0;
 }
 
-.button-box{
+.button-box {
     text-align: center;
 }
 
-main section{
+main section {
     text-align: center;
 }
 
@@ -157,15 +170,16 @@ main section{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
-.home-title{
-    color:#78C0E0;
+
+.home-title {
+    color: #78C0E0;
     font-family: 'Lato', 'Helvetica', sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
 
-logo{
-width: 100%;
+logo {
+    width: 100%;
 }
 
 #logo_link {
@@ -173,25 +187,26 @@ width: 100%;
     justify-self: center;
     align-self: center;
 }
-          
-#logo_link img{
+
+#logo_link img {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
-    width: 80px;  
+    width: 80px;
     height: 80px;
     border-radius: 150px;
 }
 
 
-.msg h2{
-    color:#78C0E0;
-    font-family: 'Lato','Helvetica', sans-serif;;
+.msg h2 {
+    color: #78C0E0;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    ;
     margin: 0;
 }
 
-.msg p{
-    color:#78C0E0;
+.msg p {
+    color: #78C0E0;
     font-size: 1em;
     padding: 15px;
 }
@@ -200,19 +215,19 @@ width: 100%;
     background-color: #2e294e;
     line-height: 1.5em;
     padding: 35px;
-  }
+}
 
-.icon{
+.icon {
     width: 80px;
     padding-top: 10px;
 }
 
 
-.camping-card{
+.camping-card {
     margin: 200px 0;
-} 
+}
 
-.rapids-card{
+.rapids-card {
     margin: 200px 0;
 }
 
@@ -230,7 +245,7 @@ width: 100%;
     transform: scale(1.1);
 }
 
- .mountains {
+.mountains {
     width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
@@ -241,34 +256,34 @@ main section img {
     box-sizing: border-box;
 }
 
-.rivers-card{
+.rivers-card {
     margin: 200px 0;
     grid-column: 2/4;
     grid-row: 2/3;
 }
 
-.camping-card{
+.camping-card {
     grid-column: 5/7;
     grid-row: 2/3;
 }
 
-.rapids-card{
+.rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
 }
 
-.River-img{
+.River-img {
     display: block;
     margin: auto;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
-.mountains{
+.mountains {
     grid-column: 2/7;
     grid-row: 5/8;
 }
 
-.msg{
+.msg {
     background-color: #2e294e;
     padding: 35px;
     grid-column: 6/10;
@@ -282,18 +297,17 @@ main section img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--bg-default);
     padding: 30px;
     border-radius: 50px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 25%);
     background-color: #78C0E0;
     margin: 0 auto;
-  }
+}
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #2e294e;
-    color:#78C0E0;
+    color: #78C0E0;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -301,32 +315,36 @@ main section img {
     border: none;
     outline: none;
     transition: 0.4s;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
     background-color: #2e294e;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
     padding: 0 18px;
     background-color: #78C0E0;
+    color: #2e294e;
     max-height: 0;
     overflow: hidden;
-  }
+}
 
-  .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
     font-size: 12px;
     color: #777;
     float: left;
     margin-right: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
 
 
 
@@ -335,7 +353,7 @@ main section img {
 
 /* Form Styles */
 
-.contactus{
+.contactus {
     text-align: center;
 }
 
@@ -346,21 +364,21 @@ form {
     border: 1px solid #ccc;
     border-radius: 1em;
     text-align: center;
-  }
-  
-  p + p {
+}
+
+p+p {
     margin-top: 1em;
-  }
-  
-  label {
+}
+
+label {
     /* Uniform size & alignment */
     display: inline-block;
     min-width: 90px;
     text-align: right;
-  }
-  
-  input,
-  textarea {
+}
+
+input,
+textarea {
     /* To make sure that all text fields have the same font settings
        By default, text areas have a monospace font */
     font: 1em sans-serif;
@@ -369,35 +387,36 @@ form {
     box-sizing: border-box;
     /* Match form field borders */
     border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
+}
+
+input:focus,
+textarea:focus {
     /* Set the outline width and style */
     outline-style: solid;
     /* To give a little highlight on active elements */
     outline-color: #000;
-  }
-  
-  textarea {
+}
+
+textarea {
     /* Align multiline text fields with their labels */
     vertical-align: top;
     /* Provide space to type some text */
     height: 5em;
-  }
-  
-  .button {
+}
+
+.button {
     /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     margin-left: 0.5em;
-  }
+}
 
-  #feedback {
+#feedback {
     background-color: antiquewhite;
     position: absolute;
     top: 0;
@@ -405,8 +424,9 @@ form {
     right: 0;
     padding: .5em;
     /* make this element invisible until we are ready for it */
-    display: none;      
+    display: none;
 }
+
 .moveDown {
     margin-top: 3em;
 }
@@ -415,44 +435,61 @@ form {
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+
+    #hero,
+    .home-grid {
         display: block;
         height: auto;
     }
-    nav, footer {
+
+    nav,
+    footer {
         flex-direction: column;
     }
+
     nav a {
         display: block;
         padding: 15px;
     }
+
     #hero {
         margin-top: 0;
     }
+
     #hero-msg {
         margin-top: 0;
     }
+
     #hero-msg h4 {
         display: none;
     }
+
     #hero-msg h1 {
         color: #6f7364;
     }
+
     .home-title {
         font-size: 25px;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
         margin: 50px auto;
         width: 60%;
     }
+
     #background {
         display: none;
     }
-    .mountains, .msg {
+
+    .mountains,
+    .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
     }
+
     footer {
         margin-top: 25px;
     }
