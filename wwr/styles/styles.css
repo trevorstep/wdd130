@@ -135,6 +135,7 @@ h1{
 
 h2{
     text-align: center;
+    color: #2e294e;
 
 }
 
@@ -256,6 +257,11 @@ main section img {
     grid-row: 2/3;
 }
 
+.River-img{
+    display: block;
+    margin: auto;
+    max-width: 100%; 
+}
 
 .mountains{
     grid-column: 2/7;
@@ -275,6 +281,7 @@ main section img {
     width: 800px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--bg-default);
     padding: 30px;
     border-radius: 50px;
