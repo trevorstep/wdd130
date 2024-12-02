@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 component activity</title>
+    <link rel="stylesheet" href="styles/week12.css" </head>
+
+<body>
+    <h1>Star wars is SO COOL</h1>
+    <button class="accordion">The Galactic Conflict</button>
+    <div class="panel">
+        <p>
+            A long time ago in a galaxy far, far away, the galaxy was torn apart by a conflict between the light and
+            dark sides of the Force. The Rebel Alliance, led by heroes like Luke Skywalker and Princess Leia, stood
+            against the oppressive Galactic Empire, ruled by the dark Sith Lord, Emperor Palpatine. This epic battle for
+            freedom and justice would determine the fate of countless star systems.</p>
+    </div>
+
+    <button class="accordion">The Mystical Force</button>
+    <div class="panel">
+        <p>The Force is a mysterious and powerful energy that binds all living things together. Jedi Knights, like
+            Obi-Wan Kenobi and Yoda, used the Force for knowledge and defense, embodying the light side. Meanwhile, the
+            Sith, such as Darth Vader, sought to dominate the galaxy through the dark side, using their power for
+            destruction and control. The Force's duality represents the eternal struggle between good and evil.</p>
+    </div>
+
+    <button class="accordion">Legacy of Star Wars</button>
+    <div class="panel">
+        <p>Star Wars is more than a story—it's a cultural phenomenon. With iconic characters, breathtaking space
+            battles, and timeless lessons about courage, redemption, and hope, the saga continues to inspire generations
+            of fans. From the original trilogy to new stories in the Disney era, Star Wars reminds us that even in the
+            darkest of times, hope can ignite like a spark in the galaxy.</p>
+    </div>
+
+    <script>
+ 
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+    </script>
+</body>
+
+</html>
