@@ -1,28 +1,49 @@
 nav a:hover {
-    background-color: #bf5767;
-    color:#78C0E0;
+    background-color: #B17A43;
+    color: #3943B7;
 }
 
-nav{
+nav {
     display: flex;
 
 }
 
-nav a{
-    text-align: center;
-    color:#78C0E0;
+nav a {
+    color: #78C0E0;
     text-decoration: none;
     padding: 35px;
+}
 
-    }
+.logo {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
 
-    .logo{
-        width: 80px;
-        height: 80px;
-    }
+header {
+    background-color: #3943B7;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
 
-    header {
-        background-color:#2e294e;
-        display: grid;
-        grid-template-columns: 150px auto;
-    }
+.left-photo {
+    padding: 50px;
+    float: left;
+    background-color: #5E6572;
+}
+
+.right-photo {
+    padding: 50px;
+    float: right;
+    background-color: #5E6572;
+}
+
+p {
+    text-align: center;
+    float: 10px;
+}
+
+.Section1 {
+    background-color: #020402;
+    height: 700px;
+}
