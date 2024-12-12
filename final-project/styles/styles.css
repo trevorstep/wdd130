@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 main {
     width: 100%;
@@ -22,10 +22,10 @@ nav {
 
 nav a {
     color: #B17A43;
-    font-family: "Oswald";
+    font-family: "Libre Baskerville";
     font-size: larger;
     font-weight: bold;
-    -webkit-text-stroke: .1px #020402;
+    -webkit-text-stroke: .3px #5E6572;
     text-decoration: none;
     padding: 35px;
 }
@@ -72,9 +72,6 @@ footer a:hover {
     background-color: #B17A43;
 }
 
-footer .social img {
-    padding-top: 15px;
-}
 
 
 .left-photo {
@@ -104,15 +101,19 @@ p {
 }
 
 h1 {
-    font-family: "Oswald";
+    font-family: "Libre Baskerville";
     text-align: center;
-    text-decoration: underline;
     background: linear-gradient(to right, #3943B7, #B17A43);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
-
+h2 {
+    font-family: "Libre Baskerville";
+    text-align: center;
+    color: #020402;
+}
 
 .Section1 {
     background-image: linear-gradient(to right, #5E6572, #020402 30%);
@@ -135,7 +136,6 @@ h1 {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-
     border: 3px solid transparent;
     border-image: linear-gradient(to left, #3943B7, #B17A43);
     border-image-slice: 1;
@@ -143,11 +143,16 @@ h1 {
     border-right: none;
     border-top: none;
     width: 100%;
-    margin: auto 0;
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(to left, #3943B7, #020402 30%);
-    padding-left: 5%;
 }
 
+.Section3 h2{
+    background: linear-gradient(to right, #3943B7, #B17A43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .Section3 {
     display: grid;
     grid-template-rows: 1fr;
@@ -180,6 +185,7 @@ h1 {
     align-self: center;
     background-color: #3943B7;
     padding: 10px;
+    margin: 10%;
 }
 
 .Section3 div {
@@ -188,5 +194,23 @@ h1 {
     display: flex;
     flex-direction: column;
     align-self: center;
+    background-color: #020402;
     color: #5E6572;
+    padding: 5px;
+    margin: 5%;
+    margin-bottom: 5%;
+    border: 6px solid transparent;
+    border-image: linear-gradient(to bottom, #3943B7, #B17A43);
+    border-image-slice: 2;
 }
+
+.fa {
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #B17A43;
+    color: #3943B7;
+  }
