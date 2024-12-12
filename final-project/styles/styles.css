@@ -35,7 +35,7 @@ nav a {
     height: 70px;
     margin: 10px;
     border: 3px #020402;
-    box-shadow: 5px 5px  #B17A43;
+    box-shadow: 5px 5px #B17A43;
 }
 
 header {
@@ -98,13 +98,16 @@ p {
     float: 10px;
     font-family: "Lato", "Helvetica", "sans-serif";
     font-size: larger;
+    line-break: 90%;
+    margin: 1.3%;
+    line-height: 150%;
 }
 
 h1 {
     font-family: "Oswald";
     text-align: center;
     text-decoration: underline;
-    background: linear-gradient(to right, #3943B7, #B17A43 );
+    background: linear-gradient(to right, #3943B7, #B17A43);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -115,7 +118,7 @@ h1 {
     background-image: linear-gradient(to right, #5E6572, #020402 30%);
 }
 
-.Section1{
+.Section1 {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -123,7 +126,7 @@ h1 {
     margin: auto 0;
     border: 3px solid transparent;
     border-image: linear-gradient(to right, #3943B7, #B17A43);
-    border-image-slice: 1;    
+    border-image-slice: 1;
     border-left: none;
     border-right: none;
 }
@@ -135,7 +138,7 @@ h1 {
 
     border: 3px solid transparent;
     border-image: linear-gradient(to left, #3943B7, #B17A43);
-    border-image-slice: 1;    
+    border-image-slice: 1;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -153,7 +156,7 @@ h1 {
     margin: auto 0;
     border: 3px solid transparent;
     border-image: linear-gradient(to right, #3943B7, #B17A43);
-    border-image-slice: 1;    
+    border-image-slice: 1;
     border-top: none;
     border-left: none;
     border-right: none;
