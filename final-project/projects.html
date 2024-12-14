@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id="content">
+    <div class="content">
         <header>
             <a id="logo_link" href="main.html">
                 <img class="logo" src="images/Trevor-Stephenson.png" alt="Trevor Stephenson">
@@ -20,21 +20,20 @@
                 <a href="contact-us.html">Contact Me</a>
             </nav>
         </header>
-
-                            <!-- Chat GPT made this because I had absolutley no desire to figure out someone elses polygon shape library. It's done though and it looks dope! -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none">
-            <!-- Left Beams -->
-            <polygon points="0 0 80 0 0 30" fill="#5E6572" opacity="0.3" />
-            <polygon points="0 0 70 0 0 40" fill="#5E6572" opacity="0.2" />
-            <polygon points="0 0 60 0 0 50" fill="#5E6572" opacity="0.1" />
-
-            <!-- Right Beams -->
-            <polygon points="100 0 20 0 100 20" fill="#5E6572" opacity="0.3" />
-            <polygon points="100 0 30 0 100 30" fill="#5E6572" opacity="0.2" />
-            <polygon points="100 0 40 0 100 45" fill="#5E6572" opacity="0.1" />
-        </svg>
-
         <main>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none">
+                <!-- Left Beams -->
+                <polygon points="0 0 80 0 0 30" fill="#5E6572" opacity="0.3" />
+                <polygon points="0 0 70 0 0 40" fill="#5E6572" opacity="0.2" />
+                <polygon points="0 0 60 0 0 50" fill="#5E6572" opacity="0.1" />
+
+                <!-- Right Beams -->
+                <polygon points="100 0 20 0 100 20" fill="#5E6572" opacity="0.3" />
+                <polygon points="100 0 30 0 100 30" fill="#5E6572" opacity="0.2" />
+                <polygon points="100 0 40 0 100 45" fill="#5E6572" opacity="0.1" />
+            </svg>
+            <!-- Chat GPT made this because I had absolutley no desire to figure out someone elses polygon shape library. It's done though and it looks dope! -->
+
             <div id="hero">
                 <div id="hero-box">
                     <img id="hero-img" src="images/coding-stuff.jpg" alt="Code">
@@ -59,7 +58,7 @@
                     </div>
                 </div>
 
-                <div id="content">
+                <div class="content">
                     <button class="accordion">Software Projects</button>
                     <div class="panel">
                         <p>
@@ -149,6 +148,15 @@
                 // add a class to move everything down so our message doesn't cover it.
                 document.body.classList.toggle('moveDown');
             });
+
+            document.querySelectorAll('.accordion').forEach(button => {
+                button.addEventListener('click', () => {
+                    const panel = button.nextElementSibling;
+                    button.classList.toggle('active');
+                    panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + 'px';
+                });
+            });
+
         </script>
 </body>
 
