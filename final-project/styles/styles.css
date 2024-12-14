@@ -16,14 +16,14 @@ body {
     margin-top: -100px;
     position: relative;
     width: 100%;
-    height: 18em;
+    height: 15em;
     overflow: hidden;
 }
 
 
 #hero-img {
     width: 100%;
-    height: 18em;
+    height: 15em;
     filter: brightness(20%);
     object-fit: cover;
     z-index: 0;    
@@ -38,7 +38,7 @@ body {
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+    margin-top: 35px;
 }
 
 .home-grid {
