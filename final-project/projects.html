@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trevor's Porfolio</title>
-    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -20,20 +20,33 @@
                 <a href="contact-us.html">Contact Me</a>
             </nav>
         </header>
+
         <main>
-            <div id="app-container">
+            <div id="hero">
+                <div id="hero-box">
+                    <img id="hero-img" src="images/coding-stuff.jpg" alt="Code">
+                    <!-- Chat GPT made this because I had absolutley no desire to figure out someone elses polygon shape library. It's done though and it looks dope! -->
+             
 
-                <div>
-                    <h2>Projects</h2>
+
                 </div>
+                <section id="hero-msg">
+                    <h1 class="home-title">Projects</h1>
+                </section>
+            </div>
 
-                <div>
-                    <p>This is the heart of the site, where you’ll get a look at what I’ve been working on, from
-                        software projects to hands-on hardware builds. The projects here span a range of skills and
-                        areas, each showcasing different aspects of my expertise and curiosity. Each project page will
-                        give you a breakdown of its purpose, my approach, the tools and languages used, and what I
-                        learned along the way. This includes:</p>
 
+            <div id="app-container">
+                <div class="Projects">
+                    <div>
+                        <p>This is the heart of the site, where you’ll get a look at what I’ve been working on, from
+                            software projects to hands-on hardware builds. The projects here span a range of skills and
+                            areas, each showcasing different aspects of my expertise and curiosity. Each project page
+                            will
+                            give you a breakdown of its purpose, my approach, the tools and languages used, and what I
+                            learned along the way. This includes:</p>
+
+                    </div>
                 </div>
 
                 <div id="content">
@@ -69,7 +82,7 @@
                             project here is documented with screenshots, code snippets, and clear explanations. I want
                             employers to understand my versatility as a developer, capable of taking on both software
                             and hardware challenges.</p>
-                            <img src="images/Arduino-Practice.jpg" alt="Arduino schematic" >
+                        <img src="images/Arduino-Practice.jpg" alt="Arduino schematic">
                     </div>
                 </div>
 
@@ -84,17 +97,49 @@
                 </div>
 
         </main>
-        <footer>
-            <img class="logo" src="images/Trevor-Stephenson.png" alt="Trevor Stephenson">
-            <a href="main.html">Introduction</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact-us.html">Contact Me</a>
-            <a href="site-plan.html">Site Plan</a>
 
-            <p>
-                &copy;Trevor Stephenson Porfolio all rights reserved Privacy polocy Terms of service
-            </p>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo-links">
+                    <img class="logo" src="images/Trevor-Stephenson.png" alt="Trevor Stephenson">
+                    <div class="footer-links">
+                        <a href="main.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact-us.html">Contact Me</a>
+                        <a href="site-plan.html">Site Plan</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="https://www.facebook.com/trevor.stephenson.3363" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/trevor.stephenson.1234/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/trevor-stephenson-382739303/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/trevorstep" class="fa fa-github"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Trevor Stephenson Portfolio. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
         </footer>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function (e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle('moveDown');
+            });
+        </script>
 </body>
 
 </html>
