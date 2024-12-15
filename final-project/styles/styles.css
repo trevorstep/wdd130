@@ -21,7 +21,6 @@ body {
 
 }
 
-
 #hero-img {
     width: 100%;
     height: 15em;
@@ -195,6 +194,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-self: center;
+    padding: 10px;
+    margin: 10%;
     background-color: #020402;
     color: #5E6572;
 }
@@ -222,6 +223,9 @@ h2 {
     padding: 5px;
     margin: 5%;
     margin-bottom: 5%;
+    border: 6px solid transparent;
+    border-image: linear-gradient(to bottom, #3943B7, #B17A43);
+    border-image-slice: 2;
 
 }
 
@@ -232,7 +236,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Space between sections */
 }
 
 
@@ -350,8 +353,8 @@ svg {
     align-items: center;
     padding: 30px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 25%);
-    background-color: #3943B7;
-    color: #B17A43;
+    background-color: #020402;
+    color: #5E6572;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
@@ -359,53 +362,92 @@ svg {
     border: 6px solid transparent;
     border-image: linear-gradient(to bottom, #3943B7, #B17A43);
     border-image-slice: 2;
-    border-bottom: none;
+    font-size: 20px;
+
+
+
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #3943B7;
-    color: #B17A43;
+    position: relative;
+    background: linear-gradient(to bottom, #3943B7, #B17A43); 
+    color: #020402;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
     outline: none;
-    transition: 0.4s;
-    border: 6px solid transparent;
-    border-image: linear-gradient(to bottom, #3943B7, #B17A43);
-    border-image-slice: 2;
+    transition: color 0.4s ease, background 0.4s ease;
     margin: 5px;
+    font-family: "Oswald";
+    font-size: 20px;
+    border: none;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-    background-color: #020402;
-    color: #3943B7;
+.accordion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #B17A43, #3943B7); 
+    opacity: 0; 
+    transition: opacity 0.4s ease; 
+    z-index: -1;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 18px;
-    background-color: #78C0E0;
-    color: #2e294e;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.accordion:hover::before,
+.accordion.active::before {
+    opacity: 1; 
+}
+
+.accordion,
+.accordion * {
+    position: relative;
+    color: #020402; 
+    z-index: 1; 
+}
+
+.accordion:hover,
+.accordion.active {
+    color: #020402; 
 }
 
 .accordion:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 12px;
-    color: #777;
-    float: left;
-    margin-right: 5px;
+    content: '\02795'; 
+    font-size: 18px;
+    float: right;
+    margin-left: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+.accordion.active:after {
+    content: '\2796'; 
+    transform: rotate(180deg); 
 }
+
+
+.panel {
+    padding: 0 18px;
+    background-color: #3943B7; 
+    color: #020402;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+ul.a {
+    list-style-type: circle;
+  }
+
+a{
+    text-decoration: none;
+    color: #B17A43;
+}
+
+.panel img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;}

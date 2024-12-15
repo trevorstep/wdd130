@@ -47,7 +47,7 @@
             <div id="app-container">
                 <div class="Projects">
                     <div>
-                        <p>This is the heart of the site.</p>
+                        <p>This is the heart of my site.</p>
                         <p>You’ll get a look at what I’ve been working on, from
                             software projects to hands-on hardware builds. The projects here span a range of skills and
                             areas, each showcasing different aspects of my expertise and curiosity. Each project page
@@ -67,7 +67,6 @@
                             skills, primarily in C#. These range from complex algorithms and data structures to search
                             and
                             sorting methods, which show my analytical and logical abilities in action.
-                            <img src="images/coding-stuff.jpg" alt="Code">
                         </p>
                     </div>
                 </div>
@@ -79,7 +78,10 @@
                         <p>Since web development is part of my curriculum, I’m continually honing my skills in HTML,
                             CSS, and JavaScript. I’ve included examples of websites I’ve built, complete with creative
                             layouts and interactive features.</p>
-
+                            <ul>
+                                <li>The very site you're on now</li>
+                                <li>  <a href="wwr/index.html">White Water Rafting Website (A school project) </a></li>
+                            </ul>
                     </div>
                 </div>
 
@@ -92,6 +94,9 @@
                             employers to understand my versatility as a developer, capable of taking on both software
                             and hardware challenges.</p>
                         <img src="images/Arduino-Practice.jpg" alt="Arduino schematic">
+                        <p>
+                            This is a schematic of a binary adder I made!! Soon ill update this site with a cool arduino pong game that I made for fun! 
+                        </p>
                     </div>
                 </div>
 
@@ -133,22 +138,6 @@
             </div>
         </footer>
         <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-            const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function (e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-
             document.querySelectorAll('.accordion').forEach(button => {
                 button.addEventListener('click', () => {
                     const panel = button.nextElementSibling;
