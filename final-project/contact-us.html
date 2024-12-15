@@ -47,27 +47,29 @@
                     </a>
                     <a href="https://github.com/trevorstep">
                         <button class="button">GitHub</button>
+                    </a>
+                    <a href="https://www.instagram.com/trevor.stephenson.1234/">
+                        <button class="button">Instagram</button>
+                    </a>
 
-                        <a href="https://www.instagram.com/trevor.stephenson.1234/">
-                            <button class="button">Instagram</button>
+                    <div id="feedback"></div>
+                    <form action="#" method="post">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </p>
+                        <p>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </p>
+                        <p>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </p>
+                        <button type="submit" class="button">Submit</button>
 
-
-
-                            <form action="/action_page.php">
-                                <label for="fname">First name:</label>
-                                <input type="text" id="fname" name="fname"><br><br>
-
-                                <label for="lname">Last name:</label>
-                                <input type="text" id="lname" name="lname"><br><br>
-
-                                <label for="message">Message:</label>
-                                <input type="text" id="message" name="message"><br><br>
-
-                                <label for="email">Email:</label>
-                                <input type="text" id="email" name="email"><br><br>
-
-                                <input type="submit" value="Submit">
-                            </form>
+        
+                    </form>
                 </div>
             </div>
 
@@ -97,6 +99,23 @@
                 <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </footer>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function (e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello, ' + formElement.user_name.value + '! Thank you for your message. I will get back with you as soon as possible! Have a great day!!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle('moveDown');
+            });
+        </script>
 </body>
 
 </html>
