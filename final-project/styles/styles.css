@@ -504,6 +504,12 @@ a {
     border-image-slice: 2;
 }
 
+.final-remarks-form a{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 .Final-remarks a{
 margin: 10px;
 padding: 10px;
