@@ -80,15 +80,15 @@ body {
 .home-title {
     font-weight: bold;
     font-size: 3.5em;
-    background: linear-gradient(to top, #3943B7, #B17A43);
+    background: linear-gradient(to top, #293085, #BCE7FD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 
 nav a:hover {
-    background-color: #B17A43;
-    color: #3943B7;
+    background-color: #BCE7FD;
+    color: #293085;
 }
 
 nav {
@@ -96,7 +96,7 @@ nav {
 }
 
 nav a {
-    color: #B17A43;
+    color: #BCE7FD;
     font-family: "Libre Baskerville";
     font-size: larger;
     font-weight: bold;
@@ -111,15 +111,15 @@ nav a {
     height: 70px;
     margin: 10px;
     border: 3px #020402;
-    box-shadow: 5px 5px #B17A43;
+    box-shadow: 5px 5px #BCE7FD;
 }
 
 header {
-    background-color: #3943B7;
+    background-color: #293085;
     display: grid;
     grid-template-columns: 150px auto;
     border: 3px solid transparent;
-    border-image: linear-gradient(to right, #3943B7, #B17A43);
+    border-image: linear-gradient(to right, #293085, #BCE7FD);
     border-image-slice: 1;
     border-left: none;
     border-right: none;
@@ -130,14 +130,14 @@ header {
     margin: 50px;
     display: flex;
     float: left;
-    box-shadow: 10px 10px #3943B7;
+    box-shadow: 10px 10px #293085;
 }
 
 .right-photo {
     Margin: 50px;
     display: flex;
     float: right;
-    box-shadow: 10px 10px #B17A43;
+    box-shadow: 10px 10px #BCE7FD;
 
 }
 
@@ -152,7 +152,7 @@ p {
 h1 {
     font-family: "Libre Baskerville";
     text-align: center;
-    background: linear-gradient(to right, #3943B7, #B17A43);
+    background: linear-gradient(to right, #293085, #BCE7FD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -160,7 +160,7 @@ h1 {
 h2 {
     font-family: "Libre Baskerville";
     text-align: center;
-    background: linear-gradient(to right, #3943B7, #B17A43);
+    background: linear-gradient(to right, #293085, #BCE7FD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -176,7 +176,7 @@ h2 {
     width: 100%;
     margin: auto 0;
     border: 3px solid transparent;
-    border-image: linear-gradient(to right, #3943B7, #B17A43);
+    border-image: linear-gradient(to right, #293085, #BCE7FD);
     border-image-slice: 1;
     border-left: none;
     border-right: none;
@@ -188,7 +188,7 @@ h2 {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     border: 3px solid transparent;
-    border-image: linear-gradient(to left, #3943B7, #B17A43);
+    border-image: linear-gradient(to left, #293085, #BCE7FD);
     border-image-slice: 1;
     border-left: none;
     border-right: none;
@@ -196,11 +196,11 @@ h2 {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to left, #3943B7, #020402 30%);
+    background-image: linear-gradient(to left, #293085, #020402 30%);
 }
 
 .Section3 h2 {
-    background: linear-gradient(to right, #3943B7, #B17A43);
+    background: linear-gradient(to right, #293085, #BCE7FD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -212,7 +212,7 @@ h2 {
     width: 100%;
     margin: auto 0;
     border: 3px solid transparent;
-    border-image: linear-gradient(to right, #3943B7, #B17A43);
+    border-image: linear-gradient(to right, #293085, #BCE7FD);
     border-image-slice: 1;
     border-top: none;
     border-left: none;
@@ -255,20 +255,20 @@ h2 {
     margin: 5%;
     margin-bottom: 5%;
     border: 6px solid transparent;
-    border-image: linear-gradient(to bottom, #3943B7, #B17A43);
+    border-image: linear-gradient(to bottom, #293085, #BCE7FD);
     border-image-slice: 2;
 
 }
 
 footer {
-    background-color: #3943B7;
+    background-color: #293085;
     color: #020402;
     padding: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border: 3px solid transparent;
-    border-image: linear-gradient(to right, #3943B7, #B17A43);
+    border-image: linear-gradient(to right, #293085, #BCE7FD);
     border-image-slice: 1;
     border-left: none;
     border-right: none;
@@ -281,7 +281,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #B17A43;
+    border-bottom: 2px solid #BCE7FD;
     padding-bottom: 15px;
 }
 
@@ -299,7 +299,7 @@ footer {
 }
 
 .footer-links a {
-    color: #B17A43;
+    color: #BCE7FD;
     font-family: "Oswald";
     font-size: larger;
     font-weight: bold;
@@ -309,8 +309,8 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #3943B7;
-    background-color: #B17A43;
+    color: #293085;
+    background-color: #BCE7FD;
     padding: 5px;
 }
 
@@ -325,8 +325,8 @@ footer {
     font-size: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #B17A43;
-    color: #3943B7;
+    background-color: #BCE7FD;
+    color: #293085;
     transition: opacity 0.3s;
 }
 
@@ -347,7 +347,7 @@ footer {
 }
 
 .footer-bottom a {
-    color: #B17A43;
+    color: #BCE7FD;
     text-decoration: none;
     font-size: 20px;
 }
@@ -365,8 +365,8 @@ footer {
     width: 25px;
     text-align: center;
     text-decoration: none;
-    background-color: #B17A43;
-    color: #3943B7;
+    background-color: #BCE7FD;
+    color: #293085;
 }
 
 .fa:hover {
@@ -397,7 +397,7 @@ svg {
     margin-left: auto;
     margin-right: auto;
     border: 6px solid transparent;
-    border-image: linear-gradient(to bottom, #3943B7, #B17A43);
+    border-image: linear-gradient(to bottom, #293085, #BCE7FD);
     border-image-slice: 2;
     font-size: 20px;
 
@@ -407,7 +407,7 @@ svg {
 
 .accordion {
     position: relative;
-    background: linear-gradient(to bottom, #3943B7, #B17A43);
+    background: linear-gradient(to bottom, #293085, #BCE7FD);
     color: #020402;
     cursor: pointer;
     padding: 18px;
@@ -428,7 +428,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #B17A43, #3943B7);
+    background: linear-gradient(to bottom, #BCE7FD, #293085);
     opacity: 0;
     transition: opacity 0.4s ease;
     z-index: -1;
@@ -467,7 +467,7 @@ svg {
 
 .panel {
     padding: 0 18px;
-    background-color: #3943B7;
+    background-color: #293085;
     color: #020402;
     max-height: 0;
     overflow: hidden;
@@ -480,7 +480,7 @@ ul.a {
 
 a {
     text-decoration: none;
-    color: #B17A43;
+    color: #BCE7FD;
 }
 
 .panel img {
@@ -500,7 +500,7 @@ a {
     margin: 5%;
     margin-bottom: 5%;
     border: 6px solid transparent;
-    border-image: linear-gradient(to bottom, #3943B7, #B17A43);
+    border-image: linear-gradient(to bottom, #293085, #BCE7FD);
     border-image-slice: 2;
 }
 
@@ -532,7 +532,7 @@ padding: 10px;
     margin-left: auto;
     margin-right: auto;
     border: 6px solid transparent;
-    border-image: linear-gradient(to bottom, #3943B7, #B17A43);
+    border-image: linear-gradient(to bottom, #293085, #BCE7FD);
     border-image-slice: 2;
     font-size: 20px;
 }
@@ -606,9 +606,9 @@ textarea {
 }
 
 .button {
-    background-color: #3943B7; 
+    background-color: #293085; 
     border: none;
-    color: #B17A43;
+    color: #BCE7FD;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -623,6 +623,6 @@ textarea {
   }
   
   .button:hover {
-    background-color: #B17A43; /* Green */
-    color: #3943B7;
+    background-color: #BCE7FD; /* Green */
+    color: #293085;
   }
