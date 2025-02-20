@@ -623,6 +623,134 @@ textarea {
   }
   
   .button:hover {
-    background-color: #BCE7FD; /* Green */
+    background-color: #BCE7FD; 
     color: #293085;
   }
+
+  /* Mobile Version */
+@media only screen and (max-width: 768px) {
+    /* Adjusting the layout of the sections */
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr; /* Make header elements stack */
+    }
+
+    .left-photo, .right-photo {
+        margin: 10px;
+        width: 100%;
+        float: none; /* Remove float and make it responsive */
+        box-shadow: none; /* Remove box-shadow for a cleaner look */
+    }
+
+    /* Hero image and message adjustments */
+    #hero, #hero-b {
+        grid-template-columns: 1fr;
+        height: 12em; /* Adjust hero height */
+    }
+
+    #hero-img, #hero-img-b {
+        height: 12em;
+    }
+
+    #hero-msg, #hero-msg-b {
+        margin-top: 20px; /* Reduce margin */
+    }
+
+    .Section1, .Section2, .Section3 {
+        grid-template-columns: 1fr; /* Stack the sections vertically */
+        margin-top: 20px;
+    }
+
+    /* Main Content & Form Adjustments */
+    #app-container, .Final-remarks {
+        width: 90%;
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .accordion, .accordion:after {
+        font-size: 16px; /* Make accordion font smaller */
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo-links, .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-size: 18px; /* Make footer links smaller */
+        padding: 5px;
+    }
+
+    /* Button adjustments */
+    .button {
+        padding: 12px 25px; /* Adjust button size */
+        font-size: 18px; /* Make the button text smaller */
+    }
+
+    /* Form adjustments for mobile */
+    form input, form textarea {
+        width: 100%; /* Make form elements take full width */
+    }
+
+    label {
+        text-align: left;
+        margin-bottom: 10px; /* Space between label and input */
+    }
+
+    /* Hero message alignment */
+    .home-title {
+        font-size: 2.5em; /* Adjust home title font size */
+    }
+
+    /* Mobile specific spacing */
+    p {
+        font-size: 18px; /* Adjust text size */
+        line-height: 1.5;
+    }
+}
+
+/* Small mobile adjustments */
+@media only screen and (max-width: 480px) {
+    .home-title {
+        font-size: 2em; /* Further reduce the home title font */
+    }
+
+    p {
+        font-size: 16px; /* Smaller text size for mobile */
+    }
+
+    .button {
+        font-size: 16px; /* Reduce button size */
+    }
+
+    .footer-links a {
+        font-size: 16px; /* Smaller footer link size */
+    }
+
+    .accordion, .accordion:after {
+        font-size: 14px; /* Smaller font size for accordion items */
+    }
+
+    /* Adjust hero section */
+    #hero-msg, #hero-msg-b {
+        margin-top: 10px; /* Less margin for hero text */
+    }
+
+    .left-photo, .right-photo {
+        margin: 5px;
+    }
+}
