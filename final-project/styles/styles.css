@@ -626,9 +626,13 @@ textarea {
     background-color: #BCE7FD; 
     color: #293085;
   }
-
-  /* Mobile Version */
+/* Mobile Version */
 @media only screen and (max-width: 768px) {
+    /* Hide the first hero image on mobile */
+    #hero-img {
+        display: none; /* Hide the first image */
+    }
+
     /* Adjusting the layout of the sections */
     .home-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
@@ -636,6 +640,7 @@ textarea {
 
     header {
         grid-template-columns: 1fr 1fr; /* Make header elements stack */
+        padding: 10px;
     }
 
     .left-photo, .right-photo {
@@ -752,5 +757,21 @@ textarea {
 
     .left-photo, .right-photo {
         margin: 5px;
+    }
+}
+
+/* Homebar navigation adjustment */
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center; /* Center the navigation links */
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of items */
+    }
+
+    nav a {
+        padding: 20px;
+        text-align: center;
+        font-size: 18px; /* Make nav links smaller for mobile */
+        margin: 5px 10px; /* Add margin for better spacing */
     }
 }
