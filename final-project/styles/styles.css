@@ -490,7 +490,7 @@ a {
     width: 50%;
 }
 
-.div final-remarks-form{
+.div final-remarks-form {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -504,15 +504,15 @@ a {
     border-image-slice: 2;
 }
 
-.final-remarks-form a{
+.final-remarks-form a {
     display: flex;
     flex-direction: column;
     align-self: center;
 }
 
-.Final-remarks a{
-margin: 10px;
-padding: 10px;
+.Final-remarks a {
+    margin: 10px;
+    padding: 10px;
 }
 
 
@@ -538,7 +538,7 @@ padding: 10px;
 }
 
 form {
-  
+
     /* Form outline */
     padding: 1em;
     border: 1px solid #ccc;
@@ -546,7 +546,7 @@ form {
     text-align: center;
     margin: 10px;
 
-   
+
 
 }
 
@@ -606,7 +606,7 @@ textarea {
 }
 
 .button {
-    background-color: #293085; 
+    background-color: #293085;
     border: none;
     color: #BCE7FD;
     padding: 15px 32px;
@@ -615,68 +615,91 @@ textarea {
     display: inline-block;
     font-size: 20px;
     border-radius: 6px;
-    font-family:"Oswald";
-  }
+    font-family: "Oswald";
+}
 
-  .button {
+.button {
     transition-duration: 0.4s;
-  }
-  
-  .button:hover {
-    background-color: #BCE7FD; 
+}
+
+.button:hover {
+    background-color: #BCE7FD;
     color: #293085;
-  }
+}
+
 /* Mobile Version */
 @media only screen and (max-width: 768px) {
+
     /* Hide the first hero image on mobile */
     #hero-img {
-        display: none; /* Hide the first image */
+        display: none;
+        /* Hide the first image */
     }
 
     /* Adjusting the layout of the sections */
     .home-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on small screens */
     }
 
     header {
-        grid-template-columns: 1fr 1fr; /* Make header elements stack */
+        grid-template-columns: 1fr 1fr;
+        /* Make header elements stack */
         padding: 10px;
     }
 
-    .left-photo, .right-photo {
+    .right-photo {
         margin: 10px;
         width: 100%;
-        float: none; /* Remove float and make it responsive */
-        box-shadow: none; /* Remove box-shadow for a cleaner look */
+        float: none;
+        /* Remove float and make it responsive */
+        box-shadow: none;
+        /* Remove box-shadow for a cleaner look */
+    }
+
+    .left-photo {
+        display: none;
     }
 
     /* Hero image and message adjustments */
-    #hero, #hero-b {
+    #hero,
+    #hero-b {
         grid-template-columns: 1fr;
-        height: 12em; /* Adjust hero height */
+        height: 12em;
+        /* Adjust hero height */
     }
 
-    #hero-img, #hero-img-b {
+    #hero-img,
+    #hero-img-b {
         height: 12em;
     }
 
-    #hero-msg, #hero-msg-b {
-        margin-top: 20px; /* Reduce margin */
+    #hero-msg,
+    #hero-msg-b {
+        margin-top: 20px;
+        /* Reduce margin */
     }
 
-    .Section1, .Section2, .Section3 {
-        grid-template-columns: 1fr; /* Stack the sections vertically */
+    .Section1,
+    .Section2,
+    .Section3 {
+        grid-template-columns: 1fr;
+        /* Stack the sections vertically */
         margin-top: 20px;
     }
 
     /* Main Content & Form Adjustments */
-    #app-container, .Final-remarks {
+    #app-container,
+    .Final-remarks {
         width: 90%;
-        padding: 15px; /* Reduce padding for smaller screens */
+        padding: 15px;
+        /* Reduce padding for smaller screens */
     }
 
-    .accordion, .accordion:after {
-        font-size: 16px; /* Make accordion font smaller */
+    .accordion,
+    .accordion:after {
+        font-size: 16px;
+        /* Make accordion font smaller */
     }
 
     .footer-top {
@@ -684,7 +707,8 @@ textarea {
         align-items: center;
     }
 
-    .footer-logo-links, .footer-links {
+    .footer-logo-links,
+    .footer-links {
         flex-direction: column;
         align-items: center;
         gap: 10px;
@@ -696,82 +720,104 @@ textarea {
     }
 
     .footer-links a {
-        font-size: 18px; /* Make footer links smaller */
+        font-size: 18px;
+        /* Make footer links smaller */
         padding: 5px;
     }
 
     /* Button adjustments */
     .button {
-        padding: 12px 25px; /* Adjust button size */
-        font-size: 18px; /* Make the button text smaller */
+        padding: 12px 25px;
+        /* Adjust button size */
+        font-size: 18px;
+        /* Make the button text smaller */
     }
 
     /* Form adjustments for mobile */
-    form input, form textarea {
-        width: 100%; /* Make form elements take full width */
+    form input,
+    form textarea {
+        width: 100%;
+        /* Make form elements take full width */
     }
 
     label {
         text-align: left;
-        margin-bottom: 10px; /* Space between label and input */
+        margin-bottom: 10px;
+        /* Space between label and input */
     }
 
     /* Hero message alignment */
     .home-title {
-        font-size: 2.5em; /* Adjust home title font size */
+        font-size: 2.5em;
+        /* Adjust home title font size */
     }
 
     /* Mobile specific spacing */
     p {
-        font-size: 18px; /* Adjust text size */
+        font-size: 18px;
+        /* Adjust text size */
         line-height: 1.5;
     }
-}
 
-/* Small mobile adjustments */
-@media only screen and (max-width: 480px) {
-    .home-title {
-        font-size: 2em; /* Further reduce the home title font */
+
+    /* Small mobile adjustments */
+    @media only screen and (max-width: 480px) {
+        .home-title {
+            font-size: 2em;
+            /* Further reduce the home title font */
+        }
+
+        p {
+            font-size: 16px;
+            /* Smaller text size for mobile */
+        }
+
+        .button {
+            font-size: 16px;
+            /* Reduce button size */
+        }
+
+        .footer-links a {
+            font-size: 16px;
+            /* Smaller footer link size */
+        }
+
+        .accordion,
+        .accordion:after {
+            font-size: 14px;
+            /* Smaller font size for accordion items */
+        }
+
+        /* Adjust hero section */
+        #hero-msg,
+        #hero-msg-b {
+            margin-top: 10px;
+            /* Less margin for hero text */
+        }
+
+        .left-photo,
+        .right-photo {
+            margin: 5px;
+        }
     }
 
-    p {
-        font-size: 16px; /* Smaller text size for mobile */
-    }
+  
 
-    .button {
-        font-size: 16px; /* Reduce button size */
-    }
+    /* Homebar navigation adjustment */
+    @media only screen and (max-width: 768px) {
+        nav {
+            justify-content: center;
+            /* Center the navigation links */
+            display: flex;
+        }
 
-    .footer-links a {
-        font-size: 16px; /* Smaller footer link size */
-    }
-
-    .accordion, .accordion:after {
-        font-size: 14px; /* Smaller font size for accordion items */
-    }
-
-    /* Adjust hero section */
-    #hero-msg, #hero-msg-b {
-        margin-top: 10px; /* Less margin for hero text */
-    }
-
-    .left-photo, .right-photo {
-        margin: 5px;
-    }
-}
-
-/* Homebar navigation adjustment */
-@media only screen and (max-width: 768px) {
-    nav {
-        justify-content: center; /* Center the navigation links */
-        display: flex;
-        flex-wrap: wrap; /* Allow wrapping of items */
-    }
-
-    nav a {
-        padding: 20px;
-        text-align: center;
-        font-size: 18px; /* Make nav links smaller for mobile */
-        margin: 5px 10px; /* Add margin for better spacing */
+        nav a {
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            /* Make nav links smaller for mobile */
+            margin: 5px 10px;
+            /* Add margin for better spacing */
+        }
     }
 }
