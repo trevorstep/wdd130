@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 main {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth; /* Adds smooth scrolling for anchor links */
 }
 
 body {
     margin: 0 auto;
     background-color: #020402;
+    background-image: radial-gradient(circle at center, rgba(188, 231, 253, 0.05) 1%, transparent 70%); /* Subtle radial gradient for depth */
+    background-size: 100% 100%;
 }
 
 #hero {
@@ -86,11 +92,6 @@ body {
 }
 
 
-nav a:hover {
-    background-color: #BCE7FD;
-    color: #293085;
-}
-
 nav {
     display: flex;
 }
@@ -103,7 +104,14 @@ nav a {
     -webkit-text-stroke: .3px #5E6572;
     text-decoration: none;
     padding: 35px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added transform and box-shadow to transition */
+}
+
+nav a:hover {
+    background-color: #BCE7FD;
+    color: #293085;
+    transform: translateY(-2px); /* Lifts the link slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 }
 
 .logo {

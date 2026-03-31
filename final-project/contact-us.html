@@ -46,7 +46,7 @@
                     <a href="https://github.com/trevorstep" class="button">GitHub</a>
                     <a href="https://www.instagram.com/trevor.stephenson.1234/" class="button">Instagram</a>
 
-                    <div id="feedback"></div>
+                    <div id="feedback" style="display: none; padding: 1em; margin-top: 1em; border-radius: 5px; text-align: center;"></div>
                     <form action="#" method="post">
                         <p>
                             <label for="name">Name:</label>
@@ -100,16 +100,49 @@
         const feedbackElement = document.getElementById('feedback');
         // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
+        const backendUrl = 'http://localhost:3000/send-email'; // Change this to your deployed backend URL later
+
         // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function (e) {
             // stop the form from doing the default action.
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello, ' + formElement.user_name.value + '! Thank you for your message. I will get back with you as soon as possible! Have a great day!!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
+
+            const formData = {
+                user_name: formElement.user_name.value,
+                user_email: formElement.user_email.value,
+                user_message: formElement.user_message.value
+            };
+
+            fetch(backendUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    feedbackElement.style.backgroundColor = '#d4edda'; // Green for success
+                    feedbackElement.style.color = '#155724';
+                    feedbackElement.innerHTML = `Hello, ${formData.user_name}! ${data.message} I will get back with you as soon as possible! Have a great day!!`;
+                    formElement.reset(); // Clear the form
+                } else if (data.error) {
+                    feedbackElement.style.backgroundColor = '#f8d7da'; // Red for error
+                    feedbackElement.style.color = '#721c24';
+                    feedbackElement.innerHTML = `Error: ${data.error}`;
+                }
+                feedbackElement.style.display = "block";
+                document.body.classList.add('moveDown'); // Use add instead of toggle for consistent behavior
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                feedbackElement.style.backgroundColor = '#f8d7da'; // Red for error
+                feedbackElement.style.color = '#721c24';
+                feedbackElement.innerHTML = 'There was a problem sending your message. Please try again later.';
+                feedbackElement.style.display = "block";
+                document.body.classList.add('moveDown');
+            });
         });
     </script>
     </div>
